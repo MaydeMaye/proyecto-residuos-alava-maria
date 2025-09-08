@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manejo de residuos sólidos</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+  <header>
+    <!-- Bloque superior -->
+    <div class="top-bar">
+      <a href="index.html"><img src="img/logo.png" alt="Logo Institución"></a>
+      <h1>MANEJO DE RESIDUOS SÓLIDOS PARA EL CUIDADO DEL MEDIO AMBIENTE</h1>
+    </div>
+
+    <!-- Bloque inferior -->
+    <div class="nav-bar">
+      <!-- Botón hamburguesa animado -->
+      <button class="menu-toggle" id="menuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Menú -->
+      <nav id="menuNav">
+        <a href="index.html">Inicio</a>
+        <a href="microcapsula.html">Microcapsula</a>
+        <a href="mades.html">MARES</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contáctanos</a>
+        <a href="juego.html" class="active">Juego</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Introducción -->
+  <section class="intro">
+    <h2>🌍 Bienvenidos al Proyecto Ambiental Modelista</h2>
+    <p>
+      El cuidado del medio ambiente es una responsabilidad que compartimos todos.
+      A través del manejo adecuado de los residuos sólidos buscamos reducir la contaminación,
+      fomentar la cultura del reciclaje y crear conciencia ecológica en nuestra comunidad educativa.
+      Este proyecto modelista busca inspirar acciones concretas que protejan la naturaleza
+      y aseguren un futuro sostenible para las próximas generaciones.
+    </p>
+  </section>
+
+  <!-- Carrusel -->
+  <section class="carousel">
+    <div class="slides" id="slides">
+      <div class="slide"><img src="img/img1.png" alt="Imagen 1"></div>
+      <div class="slide"><img src="img/img2.jpeg" alt="Imagen 2"></div>
+      <div class="slide"><img src="img/img3.jpg" alt="Imagen 3"></div>
+      <div class="slide"><img src="img/img4.jpeg" alt="Imagen 4"></div>
+    </div>
+    <!-- Botones -->
+    <button class="prev" id="prev">&#10094;</button>
+    <button class="next" id="next">&#10095;</button>
+  </section>
+
+  <!-- Bloque de noticias / periódico -->
+  <section class="news">
+    <h2>📰 Cuidemos el Planeta - Noticias Verdes</h2>
+    <div class="news-grid">
+      <article>
+        <h3>♻️ Reciclaje creativo</h3>
+        <p>Los estudiantes modelistas transforman botellas plásticas en macetas decorativas. Una forma sencilla de dar
+          nueva vida a los residuos y embellecer el colegio.</p>
+      </article>
+
+      <article>
+        <h3>🌱 Campaña ecológica</h3>
+        <p>Se inició la campaña “Un árbol, una vida”. Cada alumno plantará un árbol en el patio escolar para reducir la
+          huella de carbono y generar conciencia ambiental.</p>
+      </article>
+
+      <article>
+        <h3>💡 Eco-ideas</h3>
+        <p>En los salones se promueve el ahorro de energía: apagar luces, reutilizar hojas y usar materiales reciclados
+          en los trabajos escolares.</p>
+      </article>
+
+      <article>
+        <h3>🚮 Basura inteligente</h3>
+        <p>Se instalaron tachos de colores en cada aula para separar residuos: plástico, papel, vidrio y orgánicos. Así
+          fomentamos la cultura del reciclaje.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Galería de imágenes -->
+<section class="gallery">
+  <div class="gallery-item">
+    <img src="img/foto1.jpeg" alt="Imagen 1" class="clickable">
+  </div>
+  <div class="gallery-item">
+    <img src="img/foto2.jpeg" alt="Imagen 2" class="clickable">
+  </div>
+</section>
+
+<!-- Modal para imagen ampliada -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img">
+</div>
+
+ <!-- Footer -->
+<footer class="footer" data-aos="fade-up">
+  <div class="footer-container">
+
+    <!-- Columna 1 -->
+    <div class="footer-col">
+      <img src="img/logo.png" alt="Logo Institución" class="footer-logo">
+      <p class="footer-text">
+        "Cuidemos el medio ambiente, porque es nuestro hogar común".
+      </p>
+      
+    </div>
+
+    <!-- Columna 2 -->
+    <div class="footer-col">
+      <h4>Proyecto</h4>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="microcapsula.html">Microcápsula</a></li>
+        <li><a href="mades.html">MARES</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contáctanos</a></li>
+        <li><a href="juego.html" class="active">Juego</a></li>
+      </ul>
+    </div>
+
+    <!-- Columna 3 -->
+    <div class="footer-col">
+      <h4>Síguenos</h4>
+      <div class="social-links">
+        <a href="https://www.instagram.com/heraldo_modelista?igsh=dTRpbXIyazdra210" target="_blank">
+          <img src="img/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/share/1FHHjRpifd/" target="_blank">
+          <img src="img/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://www.tiktok.com/@ecomodelo?_t=ZS-8zSJCyu8OYi&_r=1" target="_blank">
+          <img src="img/tiktok.png" alt="TikTok">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p class="footer-info">Creado en 2025 - Proyecto de las alumnas 4to B <br> Modelo Secundaria</p>
+    <p>&copy; 2025 Proyecto Modelista. Todos los derechos reservados.</p> 
+    
+  </div>
+</footer>
+
+  <!-- Overlay -->
+  <div class="overlay" id="overlay"></div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Microcápsulas - Manejo de Residuos</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<!-- MODAL DE VIDEO -->
+<div id="videoModal" class="video-modal">
+  <div class="video-content">
+    <span class="close-video" id="closeVideo">&times;</span>
+    <video id="modalVideo" controls>
+      <source src="" type="video/mp4">
+      Tu navegador no soporta videos HTML5.
+    </video>
+  </div>
+</div>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="top-bar">
+      <a href="index.html"><img src="img/logo.png" alt="Logo Institución"></a>
+      <h1>MANEJO DE RESIDUOS SÓLIDOS PARA EL CUIDADO DEL MEDIO AMBIENTE</h1>
+    </div>
+
+    <div class="nav-bar">
+      <button class="menu-toggle" id="menuBtn">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="menuNav">
+        <a href="index.html">Inicio</a>
+        <a href="microcapsula.html" class="active">Microcápsula</a>
+        <a href="mades.html">MARES</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contáctanos</a>
+        <a href="juego.html" class="active">Juego</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- INTRO MICROCAPSULAS -->
+  <section class="intro">
+    <h2 class="animate__animated animate__fadeInDown">💡 Microcápsulas Modelistas</h2>
+    <p class="animate__animated animate__fadeInUp">
+      Las microcápsulas son pequeñas presentaciones interactivas creadas por los estudiantes modelistas.
+      Cada cápsula está diseñada para transmitir de forma clara, creativa e innovadora ideas sobre el cuidado del medio
+      ambiente.
+      Explora cada una y descubre cómo aportar a un planeta más sostenible 🌍.
+    </p>
+  </section>
+
+  <!-- SECCIÓN MICROCAPSULAS EN CAMINITO -->
+  <section class="micro-path">
+    <h2>🗺️ Caminito de Microcápsulas</h2>
+    <p class="intro-text">
+      Explora cada estación del camino y descubre ideas creativas para cuidar nuestro planeta 🌍.
+    </p>
+
+    <div class="timeline">
+
+      <!-- Punto 1 -->
+      <div class="timeline-item left">
+        <div class="timeline-icon">
+          <img src="img/residuosolidos.png" alt="residuosaolidos">
+        </div>
+        <div class="timeline-content">
+          <h3>♻️ Residuos Sólidos</h3>
+          <p>Conoce qué son y cómo impactan en nuestro entorno.</p>
+          <a href="video/residuos_solidos.mp4" target="_blank" class="btn">Ver Microcápsula</a>
+        </div>
+      </div>
+
+      <!-- Punto 2 -->
+      <div class="timeline-item right">
+        <div class="timeline-icon">
+          <img src="img/botaderos.png" alt="botaderos">
+        </div>
+        <div class="timeline-content">
+          <h3>🗑️ Botaderos</h3>
+          <p>Descubre qué son y por qué representan un grave problema ambiental.</p>
+          <a href="video/botaderos.mp4" target="_blank" class="btn">Ver Microcápsula</a>
+        </div>
+      </div>
+
+      <!-- Punto 3 -->
+      <div class="timeline-item left">
+        <div class="timeline-icon">
+          <img src="img/causas.png" alt="Basura Cero">
+        </div>
+        <div class="timeline-content">
+          <h3>⚠️ Causas del manejo inadecuado de R.S</h3>
+          <p>Factores que generan contaminación y riesgos para la salud.</p>
+          <a href="video/causas.mp4" target="_blank" class="btn">Ver Microcápsula</a>
+        </div>
+      </div>
+
+      <!-- Punto 4 -->
+      <div class="timeline-item right">
+        <div class="timeline-icon">
+          <img src="img/consecuencias.png" alt="Energía Verde">
+        </div>
+        <div class="timeline-content">
+          <h3> 🚫 Consecuencias de los botaderos</h3>
+          <p>Impactos en el ambiente y en la calidad de vida de las personas.</p>
+          <a href="video/consecuencias.mp4" target="_blank" class="btn">Ver Microcápsula</a>
+        </div>
+      </div>
+
+      <!-- Punto 5 -->
+      <div class="timeline-item left">
+        <div class="timeline-icon">
+          <img src="img/clasificacion.png" alt="Basura Cero">
+        </div>
+        <div class="timeline-content">
+          <h3> ❌ Manejo inadecuado de R.S</h3>
+          <p>Provoca daños al ambiente y acelera el cambio climático.</p>
+          <a href="video/inadecuado.mp4" target="_blank" class="btn">Ver Microcápsula</a>
+        </div>
+      </div>
+
+      <!-- Punto  6-->
+      <div class="timeline-item right">
+        <div class="timeline-icon">
+          <img src="img/reciclaje.png" alt="Energía Verde">
+        </div>
+        <div class="timeline-content">
+          <h3> ♻️ Importancia del reciclaje</h3>
+          <p>Una acción clave para cuidar el planeta y reducir la contaminación.</p>
+          <a href="video/importancia.mp4" target="_blank" class="btn">Ver Microcápsula</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- BOTÓN QUIZ -->
+<div class="quiz-section">
+  <button class="open-quiz" id="openQuiz">📝 ¡Haz el Desafío de Residuos!</button>
+</div>
+
+<!-- MODAL DEL QUIZ -->
+<div id="quizModal" class="quiz-modal">
+  <div class="quiz-content">
+    <span class="close-quiz" id="closeQuiz">&times;</span>
+    <h2>♻️ ¡Desafío de Residuos Sólidos!</h2>
+    <p>Selecciona la respuesta correcta y diviértete aprendiendo.</p>
+
+    <form id="quizForm">
+      <div class="question">
+        <p>1. ¿Qué son los residuos sólidos?</p>
+        <label><input type="radio" name="q1" value="a"> a) Cosas que se pueden reutilizar y son divertidas</label><br>
+        <label><input type="radio" name="q1" value="b"> b) Cosas que se desechan y no se pueden reutilizar</label><br>
+        <label><input type="radio" name="q1" value="c"> c) Cosas que se reciclan y se convierten en algo nuevo</label><br>
+        <label><input type="radio" name="q1" value="d"> d) Cosas que se compostan y se convierten en abono</label>
+      </div>
+
+      <div class="question">
+        <p>2. ¿Cuál es el superhéroe de los residuos sólidos?</p>
+        <label><input type="radio" name="q2" value="a"> a) Reciclón</label><br>
+        <label><input type="radio" name="q2" value="b"> b) Compostero</label><br>
+        <label><input type="radio" name="q2" value="c"> c) Reducidor</label><br>
+        <label><input type="radio" name="q2" value="d"> d) Todos los anteriores</label>
+      </div>
+
+      <div class="question">
+        <p>3. ¿Qué puedes hacer para reducir la generación de residuos sólidos?</p>
+        <label><input type="radio" name="q3" value="a"> a) Usar bolsas de plástico de un solo uso</label><br>
+        <label><input type="radio" name="q3" value="b"> b) Reutilizar botellas de agua</label><br>
+        <label><input type="radio" name="q3" value="c"> c) Comprar productos con envases biodegradables</label><br>
+        <label><input type="radio" name="q3" value="d"> d) Todas las anteriores excepto a)</label><br>
+      </div>
+
+      <div class="question">
+        <p>4. ¿Qué es el reciclaje?</p>
+        <label><input type="radio" name="q4" value="a"> a) Un juego de palabras</label><br>
+        <label><input type="radio" name="q4" value="b"> b) Un proceso para convertir residuos en nuevos productos</label><br>
+        <label><input type="radio" name="q4" value="c"> c) Un deporte extremo</label><br>
+        <label><input type="radio" name="q4" value="d"> d) Un tipo de música</label>
+      </div>
+
+      <div class="question">
+        <p>5. ¿Por qué es importante la educación sobre la gestión de residuos sólidos?</p>
+        <label><input type="radio" name="q5" value="a"> a) Para que los adultos se diviertan</label>
+        <label><input type="radio" name="q5" value="b"> b) Para que los niños aprendan a reciclar</label><br>
+        <label><input type="radio" name="q5" value="c"> c) Para proteger el medio ambiente y conservar recursos naturales</label><br>
+        <label><input type="radio" name="q5" value="d"> d) Para ganar un premio</label>
+        
+      </div>
+
+      <div class="question">
+        <p>6. ¿Qué puedes hacer para ayudar a reducir la contaminación ambiental?</p>
+        <label><input type="radio" name="q6" value="a"> a) Tirar basura en la calle</label><br>
+        <label><input type="radio" name="q6" value="b"> b) Reciclar papel y cartón</label><br>
+        <label><input type="radio" name="q6" value="c"> c) Usar bolsas de plástico de un solo uso</label><br>
+        <label><input type="radio" name="q6" value="d"> d) Todas las anteriores excepto b)</label>
+      </div>
+
+      <button type="button" id="submitQuiz">Enviar respuestas</button>
+    </form>
+
+    <div id="resultado" class="resultado"></div>
+    <div class="quiz-actions" id="quizActions" style="display: none;">
+      <button id="retryQuiz">🔄 Volver a intentar</button>
+      <button id="exitQuiz">❌ Cerrar cuestionario</button>
+    </div>
+  </div>
+</div>
+
+  <!-- FOOTER -->
+  <footer class="footer" data-aos="fade-up">
+    <div class="footer-container">
+
+      <div class="footer-col">
+        <img src="img/logo.png" alt="Logo Institución" class="footer-logo">
+        <p class="footer-text">
+          "Cuidemos el medio ambiente, porque es nuestro hogar común".
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Proyecto</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="microcapsula.html">Microcápsula</a></li>
+          <li><a href="mades.html">MARES</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contáctanos</a></li>
+          <li><a href="juego.html" class="active">Juego</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Síguenos</h4>
+        <div class="social-links">
+          <a href="https://www.instagram.com/heraldo_modelista?igsh=dTRpbXIyazdra210" target="_blank">
+            <img src="img/instagram.png" alt="Instagram">
+          </a>
+          <a href="https://www.facebook.com/share/1FHHjRpifd/" target="_blank">
+            <img src="img/facebook.png" alt="Facebook">
+          </a>
+          <a href="https://www.tiktok.com/@ecomodelo?_t=ZS-8zSJCyu8OYi&_r=1" target="_blank">
+            <img src="img/tiktok.png" alt="TikTok">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-info">Creado en 2025 - Proyecto de las alumnas 4to B <br> Modelo Secundaria</p>
+      <p>&copy; 2025 Proyecto Modelista. Todos los derechos reservados.</p>
+      
+    </div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <script src="js/quiz.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/videoModal.js"></script>
+</body>
+
+</html>
